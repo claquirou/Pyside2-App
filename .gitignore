@@ -13,7 +13,6 @@ __pycache__
 
 # PyBuilder
 target/
-*freeze.sh
 
 # Installer logs
 pip-log.txt
