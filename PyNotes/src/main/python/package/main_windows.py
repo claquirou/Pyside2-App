@@ -23,10 +23,11 @@ class MainWindow(QtWidgets.QWidget):
         self.btn_createNote = QtWidgets.QPushButton("Créer une note")
         self.btn_renameNote = QtWidgets.QPushButton("Renommer la note")
         self.lw_notes = QtWidgets.QListWidget()
-        self.lw_notes.setSortingEnabled(True)
         self.te_content = QtWidgets.QTextEdit()
 
     def modify_widgets(self):
+        self.lw_notes.setSortingEnabled(True)
+
         css_file = self.ctx.get_resource("style.css")
         with open(css_file, "r") as f:
             self.setStyleSheet(f.read())
@@ -100,6 +101,7 @@ class MainWindow(QtWidgets.QWidget):
                 note.delete_path(selected_item.text())
                 self.lw_notes.clear()
                 self.populate_notes()
+
         else:
             message_box = QtWidgets.QMessageBox(self)
             message_box.setWindowTitle("Info")

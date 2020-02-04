@@ -232,7 +232,7 @@ QTextEdit {
 	padding: 5px;
 	border-radius: 5px;
 	margin: 1px;
-	font-size: 14px;
+	font-size: 15px;
 	border: 1px solid rgb(50, 50, 50);
 	background-color: #232323;
 }
@@ -257,10 +257,12 @@ QListWidget {
 	background-color: rgb(30, 30, 30);
 	alternate-background-color: rgb(31, 31, 31);
 	font-size: 16px;
+
 }
 
 QListWidget::item {
 	border: 2px;
+	padding: 10px;
 	color: #fafafa;
 }
 

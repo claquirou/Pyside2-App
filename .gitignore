@@ -20,7 +20,7 @@ pip-delete-this-directory.txt
 
 
 # Environments
-env/
+venv/
 .vscode/
 *.idea/
 
